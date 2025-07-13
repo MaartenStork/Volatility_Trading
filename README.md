@@ -76,6 +76,26 @@ The project includes SPX option data from April 3, 2025:
 - Similar data structure to call options
 - Strikes ranging from $2,400 to current market levels
 
+## Key Equations Implemented
+
+### Classical Volatility (Equation 14)
+
+```
+σ̂² = (1/(N-1)) * Σ[1/(t_{k+1}-t_k)] * (r_k - dt*μ̂)²
+```
+
+### Parkinson Estimator (Equation 2)
+
+```
+σ_Parkinson = sqrt((1/(4ln2*T)) * Σ[ln(h_t/l_t)]²)
+```
+
+### VIX Calculation (Equation 19)
+
+```
+VIX² = (2*e^(rτ)/τ) * Σ(ΔK/K²) * Q(K)
+```
+
 ## Requirements
 
 ```python
@@ -147,58 +167,4 @@ rolling_vol = compute_rolling_estimators(data, window_size=30)
 # Display results
 print(rolling_vol.head())
 ```
-
-## Key Equations Implemented
-
-### Classical Volatility (Equation 14)
-
-```
-σ̂² = (1/(N-1)) * Σ[1/(t_{k+1}-t_k)] * (r_k - dt*μ̂)²
-```
-
-### Parkinson Estimator (Equation 2)
-
-```
-σ_Parkinson = sqrt((1/(4ln2*T)) * Σ[ln(h_t/l_t)]²)
-```
-
-### VIX Calculation (Equation 19)
-
-```
-VIX² = (2*e^(rτ)/τ) * Σ(ΔK/K²) * Q(K)
-```
-
-## Results and Visualizations
-
-The project generates various plots in the `figures/` directory:
-
-- **Regression Analysis**: Shows relationships between SPX returns and volatility measures
-- **Volatility Comparison**: Compares different volatility estimators
-- **Hedge Performance**: Analyzes hedging strategies using volatility models
-- **Box Plots and Histograms**: Statistical distributions of volatility measures
-
-## Financial Insights
-
-This project provides insights into:
-
-1. **Volatility Risk Premium**: The difference between implied and realized volatility
-2. **Market Relationships**: How SPX returns correlate with VIX levels and changes
-3. **Estimation Accuracy**: Comparison of different volatility measurement methods
-4. **Hedging Performance**: Effectiveness of volatility-based hedging strategies
-
-## Contributing
-
-Feel free to contribute by:
-- Adding new volatility estimators
-- Implementing additional regression models
-- Enhancing visualization capabilities
-- Adding more comprehensive testing
-
-## License
-
-This project is for educational and research purposes. Please ensure compliance with data provider terms of service when using financial data.
-
-## Contact
-
-For questions or suggestions regarding this volatility trading analysis project, please open an issue in the repository.
 
