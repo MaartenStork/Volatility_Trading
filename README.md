@@ -1,6 +1,6 @@
 # Volatility Trading Analysis
 
-A comprehensive Python-based project for analyzing S&P 500 (SPX) options volatility, VIX estimation, and volatility trading strategies. This project implements various volatility estimators and regression models to understand the relationship between implied and realized volatility.
+A Python-based project for analyzing S&P 500 (SPX) options volatility, VIX estimation, and volatility trading strategies. This project implements various volatility estimators and regression models to understand the relationship between implied and realized volatility.
 
 ## Project Overview
 
@@ -170,28 +170,3 @@ The project generates various plots in the `figures/` directory:
 - **Hedge Performance**: Analyzes hedging strategies using volatility models
 - **Box Plots and Histograms**: Statistical distributions of volatility measures
 
-## Financial Insights
-
-This project provides insights into:
-
-1. **Volatility Risk Premium**: The difference between implied and realized volatility
-2. **Market Relationships**: How SPX returns correlate with VIX levels and changes
-3. **Estimation Accuracy**: Comparison of different volatility measurement methods
-4. **Hedging Performance**: Effectiveness of volatility-based hedging strategies
-
-## Contributing
-
-Feel free to contribute by:
-
-- Adding new volatility estimators
-- Implementing additional regression models
-- Enhancing visualization capabilities
-- Adding more comprehensive testing
-
-## License
-
-This project is for educational and research purposes. Please ensure compliance with data provider terms of service when using financial data.
-
-## Contact
-
-For questions or suggestions regarding this volatility trading analysis project, please open an issue in the repository.
