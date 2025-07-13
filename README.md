@@ -5,6 +5,7 @@ A comprehensive Python-based project for analyzing S&P 500 (SPX) options volatil
 ## Project Overview
 
 This project contains three main components:
+
 1. **SPX-VIX Regression Analysis** - Examines the relationship between SPX returns and VIX levels
 2. **VIX Estimation** - Calculates VIX from option chain data using CBOE methodology
 3. **Volatility Estimators** - Implements classical and Parkinson volatility estimators
@@ -18,10 +19,6 @@ Volatility_Trading/
 │   ├── Call_option_data_2025-04-03_final.csv
 │   └── Put_option_data_2025-04-03_final.csv
 ├── figures/                           # Generated plots and visualizations
-│   ├── hedge_*.png                    # Hedging performance plots
-│   ├── vol_*.png                      # Volatility analysis plots
-│   ├── regr*.png                      # Regression analysis plots
-│   └── volatility_*.png               # Volatility estimation plots
 └── FinDatSc_Models/                   # Core Python modules
     ├── spx_vix_regression.py          # SPX-VIX regression analysis
     ├── vix_estimator.py               # VIX calculation from options
@@ -34,7 +31,7 @@ Volatility_Trading/
 
 - **Data Download**: Automatically downloads SPX and VIX historical data from Yahoo Finance
 - **Returns Calculation**: Computes daily SPX returns and realized variance
-- **Regression Models**: 
+- **Regression Models**:
   - SPX Returns vs VIX levels
   - SPX Returns vs Realized Variance
   - SPX Returns vs ∆VIX (change in VIX)
@@ -61,11 +58,13 @@ Volatility_Trading/
 The project includes SPX option data from April 3, 2025:
 
 ### Call Options (`Call_option_data_2025-04-03_final.csv`)
+
 - 126 call contracts with various strike prices
 - Includes bid/ask prices, implied volatility, volume, and open interest
 - Strikes ranging from $2,800 to above current market levels
 
 ### Put Options (`Put_option_data_2025-04-03_final.csv`)
+
 - 177 put contracts with comprehensive strike coverage
 - Similar data structure to call options
 - Strikes ranging from $2,400 to current market levels
@@ -83,12 +82,14 @@ statsmodels>=0.13.0
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd Volatility_Trading
 ```
 
 2. Install required packages:
+
 ```bash
 pip install yfinance numpy pandas matplotlib statsmodels
 ```
@@ -143,16 +144,19 @@ print(rolling_vol.head())
 ## Key Equations Implemented
 
 ### Classical Volatility (Equation 14)
+
 ```
 σ̂² = (1/(N-1)) * Σ[1/(t_{k+1}-t_k)] * (r_k - dt*μ̂)²
 ```
 
 ### Parkinson Estimator (Equation 2)
+
 ```
 σ_Parkinson = sqrt((1/(4ln2*T)) * Σ[ln(h_t/l_t)]²)
 ```
 
 ### VIX Calculation (Equation 19)
+
 ```
 VIX² = (2*e^(rτ)/τ) * Σ(ΔK/K²) * Q(K)
 ```
@@ -178,6 +182,7 @@ This project provides insights into:
 ## Contributing
 
 Feel free to contribute by:
+
 - Adding new volatility estimators
 - Implementing additional regression models
 - Enhancing visualization capabilities
@@ -189,4 +194,4 @@ This project is for educational and research purposes. Please ensure compliance 
 
 ## Contact
 
-For questions or suggestions regarding this volatility trading analysis project, please open an issue in the repository. 
+For questions or suggestions regarding this volatility trading analysis project, please open an issue in the repository.
