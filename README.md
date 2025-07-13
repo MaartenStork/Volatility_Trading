@@ -5,9 +5,9 @@ A Python-based project for analyzing S&P 500 (SPX) options volatility, VIX estim
 ## Authors
 
 This project was developed by:
-- **Maarten Stork** (15761770)
-- **Lucas Keijzer** (14041073)
-- **Pemmasani Prabakaran Rohith Saai** (14968061)
+- **Maarten Stork** 
+- **Lucas Keijzer** 
+- **Pemmasani Prabakaran Rohith Saai**
 
 ## Project Overview
 
