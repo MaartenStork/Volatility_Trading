@@ -3,7 +3,7 @@
 A Python-based project for analyzing S&P 500 (SPX) options volatility, VIX estimation, and volatility trading strategies. This project implements various volatility estimators and regression models to understand the relationship between implied and realized volatility.
 
 <p align="center">
-  <img src="figures/realreal (1).png" alt="Comparison" width="60%">
+  <img src="figures/realreal (1).png" alt="Comparison" width="40%">
   <br>
   <em>Figure 1: Comparison of Volatilities.</em>
 </p>
