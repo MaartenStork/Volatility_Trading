@@ -5,7 +5,7 @@ A Python-based project for analyzing S&P 500 (SPX) options volatility, VIX estim
 <p align="center">
   <img src="figures/realreal (1).png" alt="Comparison" width="40%">
   <br>
-  <em>Figure 1: Comparison of Volatilities.</em>
+  <em>Figure 1: Comparison of MSFT Volatilities.</em>
 </p>
 
 
