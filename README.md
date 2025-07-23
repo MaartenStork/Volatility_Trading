@@ -2,24 +2,17 @@
 
 A Python-based project for analyzing S&P 500 (SPX) options volatility, VIX estimation, and volatility trading strategies. This project implements various volatility estimators and regression models to understand the relationship between implied and realized volatility.
 
-<div align="center">
-  <table>
-    <tr>
-      <td style="text-align: center; vertical-align: top;">
-        <img src="figures/regr1.png" alt="Classic v Implied" width="300px"><br>
-        <div style="text-align: center;">
-          <em>Figure 1: Classic Volatility versus Implied Volatility.</em>
-        </div>
-      </td>
-      <td style="text-align: center; vertical-align: top;">
-        <img src="figures/regr2.png" alt="Parkinson v Implied" width="300px"><br>
-        <div style="text-align: center;">
-          <em>Figure 2: Parkinson Volatility versus Implied Volatility.</em>
-        </div>
-      </td>
-    </tr>
-  </table>
+<div style="text-align: center;">
+  <figure style="display: inline-block; margin: 0 20px; text-align: center;">
+    <img src="figures/regr1.png" alt="Classic v Implied" width="300px" />
+    <figcaption><em>Figure 1: Classic Volatility versus Implied Volatility.</em></figcaption>
+  </figure>
+  <figure style="display: inline-block; margin: 0 20px; text-align: center;">
+    <img src="figures/regr2.png" alt="Parkinson v Implied" width="300px" />
+    <figcaption><em>Figure 2: Parkinson Volatility versus Implied Volatility.</em></figcaption>
+  </figure>
 </div>
+
 
 
 ## Authors
